@@ -39,7 +39,7 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
         Default Value: 5
         Unit: Seconds
 
-### Examples:
+## Examples:
 Calling the macro with default parameters:
 
     LINEAR_HEATER_CONTROL
@@ -62,3 +62,12 @@ Using the macro in your END_GCODE (example):
     G0 X5 F3600                                         ; park nozzle
     M84                                                 ; Turn off steppers
     ...
+
+## Disclaimer
+
+> [!WARNING]
+> Use this macro responsibly.
+> 
+> YOU are responsible for ensuring the safety of your printer and the commanded temperatures.
+> 
+> Do not operate your printer un-attended.
