@@ -12,7 +12,7 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
 
 | Argument  | Unit | Type | Default | Description |
 | --------  | :---: | :------: | :-----------: | ----------- |
-| HEATER  | n/a | String | heater_bed | The name of the heater you would like to control (ie. heater_bed or extruder). |
+| HEATER  | n/a | string | heater_bed | The name of the heater you would like to control (ie. heater_bed or extruder). |
 | TARGET  | °C | float | 0 | The desired final temperature. This is what the heater will be set to when the macro ends control. |
 | TRANSITION_RATE  | °C/min | float | 1.3 | The desired rate of temperature change of the heater (if achievable). |
 | COOLING_ABORT_DELTA  | °C | float | 1.5 | The control will terminate early if TRANSITION_RATE exceeds the natural cooling rate (measured temp - control temp > COOLING_ABORT_DELTA). Only during cooling. |
