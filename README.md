@@ -10,7 +10,7 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
 
 ### Macro Arguments:
 
-| Argument  | Unit | Data Type | Default Value | Description |
+| Argument  | Unit | Type | Default | Description |
 | --------  | :---: | :------: | :-----------: | ----------- |
 | HEATER  | n/a | String | heater_bed | The name of the heater you would like to control (ie. heater_bed or extruder). |
 | TARGET  | °C | float | 0 | The desired final temperature. This is what the heater will be set to when the macro ends control. |
