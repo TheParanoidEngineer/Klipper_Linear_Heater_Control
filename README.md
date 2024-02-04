@@ -8,15 +8,15 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
 ### Macro Name: 
     LINEAR_HEATER_CONTROL
 
-### Macro Arguements:
+### Macro Arguments:
 
 | Argument  | Unit | Data Type | Default Value | Description |
-| --------  | ---- | --------- | ------------- | ----------- |
-| HEATER  | n/a | String | "heater_bed" | The name of the heater you would like to control (ie. heater_bed or extruder). |
+| --------  | :---: | :------: | :-----------: | ----------- |
+| HEATER  | n/a | String | heater_bed | The name of the heater you would like to control (ie. heater_bed or extruder). |
 | TARGET  | °C | float | 0 | The desired final temperature. This is what the heater will be set to when the macro ends control. |
 | TRANSITION_RATE  | °C/min | float | 1.3 | The desired rate of temperature change of the heater (if achievable). |
 | COOLING_ABORT_DELTA  | °C | float | 1.5 | The control will terminate early if TRANSITION_RATE exceeds the natural cooling rate (measured temp - control temp > COOLING_ABORT_DELTA). Only during cooling. |
-| REFRESH_TIME  | sec. | float | 5 | Duration of time between control actions (ie. 5s --> 12Hz) |
+| REFRESH_TIME  | sec. | float | 5 | Duration of time between control actions (ie. 5s --> 12Hz update freq.) |
 
 ## Examples:
 Calling the macro with default parameters:
