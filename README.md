@@ -10,35 +10,35 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
 
 ### Macro Arguements:
     HEATER:
+        Description: The name of the heater you would like to control (ie. heater_bed or extruder).
         Data Type: string
         Default Value: "heater_bed"
         Unit: n/a
-        Description: The name of the heater you would like to control (ie. heater_bed or extruder).
-      
+        
     TARGET:
+        Description: The desired final temperature. This is what the heater will be set to when the macro ends control.
         Data Type: float
         Default Value: 0
         Unit: Degree Celsius
-        Description: The desired final temperature. This is what the heater will be set to when the macro ends control.
-      
+
     TRANSITION_RATE:
+        Description: The desired rate of temperature change of the heater (if achievable).
         Data Type: float
         Default Value: 1.3
         Unit: Degree Celsius/min
-        Description: The desired rate of temperature change of the temperature (if achievable).
-    
+
     COOLING_ABORT_DELTA:
+        Description: The control will terminate early if TRANSITION_RATE exceeds the natural cooling rate (measured temp - control temp > COOLING_ABORT_DELTA). Only during cooling.
         Data Type: float
         Default Value: 1.5
         Unit: Degree Celsius
-        Description: The control will terminate early if TRANSITION_RATE is exceeds the natural cooling rate (measured temp - control temp > COOLING_ABORT_DELTA). Only during cooling.
-    
+
     REFRESH_TIME:
+        Description: The frequency that the control is executed.
         Data Type: float
         Default Value: 5
         Unit: Seconds
-        Description: The frequency that the control is executed. 
-        
+
 ### Examples:
 Calling the macro with default parameters:
 
