@@ -9,35 +9,14 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
     LINEAR_HEATER_CONTROL
 
 ### Macro Arguements:
-    HEATER:
-        Description: The name of the heater you would like to control (ie. heater_bed or extruder).
-        Data Type: string
-        Default Value: "heater_bed"
-        Unit: n/a
-        
-    TARGET:
-        Description: The desired final temperature. This is what the heater will be set to when the macro ends control.
-        Data Type: float
-        Default Value: 0
-        Unit: Degree Celsius
 
-    TRANSITION_RATE:
-        Description: The desired rate of temperature change of the heater (if achievable).
-        Data Type: float
-        Default Value: 1.3
-        Unit: Degree Celsius/min
-
-    COOLING_ABORT_DELTA:
-        Description: The control will terminate early if TRANSITION_RATE exceeds the natural cooling rate (measured temp - control temp > COOLING_ABORT_DELTA). Only during cooling.
-        Data Type: float
-        Default Value: 1.5
-        Unit: Degree Celsius
-
-    REFRESH_TIME:
-        Description: The frequency that the control is executed.
-        Data Type: float
-        Default Value: 5
-        Unit: Seconds
+| Argument  | Unit | Data Type | Default Value | Description |
+| --------  | ---- | --------- | ------------- | ----------- |
+| HEATER  | n/a | String | "heater_bed" | The name of the heater you would like to control (ie. heater_bed or extruder). |
+| TARGET  | °C | float | 0 | The desired final temperature. This is what the heater will be set to when the macro ends control. |
+| TRANSITION_RATE  | °C/min | float | 1.3 | The desired rate of temperature change of the heater (if achievable). |
+| COOLING_ABORT_DELTA  | °C | float | 1.5 | The control will terminate early if TRANSITION_RATE exceeds the natural cooling rate (measured temp - control temp > COOLING_ABORT_DELTA). Only during cooling. |
+| REFRESH_TIME  | sec. | float | 5 | Duration of time between control actions (ie. 5s --> 12Hz) |
 
 ## Examples:
 Calling the macro with default parameters:
