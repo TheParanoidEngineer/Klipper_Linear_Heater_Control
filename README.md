@@ -4,8 +4,11 @@ This config allows you to linearly control the heating or cooling of a heater in
 The most common use case would be to control the temperature of the heated bed during cooling to prevent warping in materials such as ABS/ASA/etc.
 The bed temperature can be slowly/linearly cooled over time allowing the material to release internal stresses and cool uniformly.
 
-Exampled of controlled bed cool-down:<br>
-![Controlled Bed Cooldown Post-Print](/resources/images/Controlled_Bed_Heater_Cooldown.png)
+<p align="center">
+    <img width="400" height="auto" src="/resources/images/Controlled_Bed_Heater_Cooldown.png">
+    <br>
+    <b>Exampled of controlled bed cool-down</b>
+</p>
 
 ## How To Set-Up
 
