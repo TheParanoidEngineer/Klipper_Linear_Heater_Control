@@ -12,14 +12,11 @@ The bed temperature can be slowly/linearly cooled over time allowing the materia
 
 ## How To Set-Up
 
-I believe the easiest method to manually copy the config file content into a new file on your Klipper host:
+I believe the easiest method to manually copy the config file onto your Klipper host using your front-end:
 
+- Download ```Linear_Heater_Control.cfg``` from this GitHub repository.
 - Open your Klipper Front-End (ie. Fluidd or Mainsail) and navigate to your configuration section.
-- Create a new file called ```Linear_Heater_Control.cfg``` and open it for editing.
-- Return to this GitHub repository and open ```Linear_Heater_Control.cfg``` and press on "Raw".<br>![Raw Button Location](resources/images/Raw_Button.png)
-- Copy the entire content of the file to your clipboard.
-- Paste the content from your clipboard into the file on your Klipper Host.
-- Save the file on your Klipper Host
+- Paste/Upload/Drag-Drop the downloaded file ```Linear_Heater_Control.cfg``` into your config folder.
 - Place the following somehwere in an included Klipper cfg file (ie. ```printer.cfg```):<br> ```[include Linear_Heater_Control.cfg]```
 - Done! You can now call the macro using ```LINEAR_HEATER_CONTROL```
 
