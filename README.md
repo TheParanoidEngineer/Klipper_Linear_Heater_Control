@@ -10,7 +10,7 @@ I believe the easiest method to manually copy the config file content into a new
 
 - Open your Klipper Front-End (ie. Fluidd or Mainsail) and navigate to your configuration section.
 - Create a new file called ```Linear_Heater_Control.cfg``` and open it for editing.
-- Using your web browser return to this GitHub repository and open ```Linear_Heater_Control.cfg``` and press on "Raw".
+- Return to this GitHub repository and open ```Linear_Heater_Control.cfg``` and press on "Raw".
 - Copy the entire content of the file to your clipboard.
 - Paste the content from your clipboard into the file on your Klipper Host.
 - Save the file on your Klipper Host
