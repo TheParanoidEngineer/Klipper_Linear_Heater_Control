@@ -61,6 +61,11 @@ Using the macro in your END_GCODE (example):
     M84                                                 ; Turn off steppers
     ...
 
+## Pending Updates:
+
+- Improved detection/alert for invalid input arguements (ie invalid heater names)
+- Improved Installation instructions using SSH + automatic updates with moonraker
+
 ## Disclaimer
 
 > [!WARNING]
