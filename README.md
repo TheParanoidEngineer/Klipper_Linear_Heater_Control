@@ -4,13 +4,16 @@ This config allows you to linearly control the heating or cooling of a heater in
 The most common use case would be to control the temperature of the heated bed during cooling to prevent warping in materials such as ABS/ASA/etc.
 The bed temperature can be slowly/linearly cooled over time allowing the material to release internal stresses and cool uniformly.
 
+Exampled of controlled bed cool-down:<br>
+![Controlled Bed Cooldown Post-Print](/resources/images/Controlled_Bed_Heater_Cooldown.png)
+
 ## How To Set-Up
 
 I believe the easiest method to manually copy the config file content into a new file on your Klipper host:
 
 - Open your Klipper Front-End (ie. Fluidd or Mainsail) and navigate to your configuration section.
 - Create a new file called ```Linear_Heater_Control.cfg``` and open it for editing.
-- Return to this GitHub repository and open ```Linear_Heater_Control.cfg``` and press on "Raw".
+- Return to this GitHub repository and open ```Linear_Heater_Control.cfg``` and press on "Raw".<br>![Raw Button Location](resources/images/Raw_Button.png)
 - Copy the entire content of the file to your clipboard.
 - Paste the content from your clipboard into the file on your Klipper Host.
 - Save the file on your Klipper Host
