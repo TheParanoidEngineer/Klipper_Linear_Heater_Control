@@ -4,6 +4,19 @@ This config allows you to linearly control the heating or cooling of a heater in
 The most common use case would be to control the temperature of the heated bed during cooling to prevent warping in materials such as ABS/ASA/etc.
 The bed temperature can be slowly/linearly cooled over time allowing the material to release internal stresses and cool uniformly.
 
+## How To Set-Up
+
+I believe the easiest method to manually copy the config file content into a new file on your Klipper host:
+
+- Open your Klipper Front-End (ie. Fluidd or Mainsail) and navigate to your configuration section.
+- Create a new file called ```Linear_Heater_Control.cfg``` and open it for editing.
+- Using your web browser return to this GitHub repository and open ```Linear_Heater_Control.cfg``` and press on "Raw".
+- Copy the entire content of the file to your clipboard.
+- Paste the content from your clipboard into the file on your Klipper Host.
+- Save the file on your Klipper Host
+- Place the following somehwere in an included Klipper cfg file (ie. ```printer.cfg```):<br> ```[include Linear_Heater_Control.cfg]```
+- Done! You can now call the macro using ```LINEAR_HEATER_CONTROL```
+
 ## Macro Information
 ### Macro Name: 
     LINEAR_HEATER_CONTROL
