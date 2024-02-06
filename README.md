@@ -20,10 +20,10 @@ I believe the easiest method to manually copy the config file onto your Klipper 
 - Done! You can now call the macro using ```LINEAR_HEATER_CONTROL```
 
 ## Macro Information
-### Macro Name: 
+#### Macro Name: 
     LINEAR_HEATER_CONTROL
 
-### Macro Arguments:
+#### Macro Arguments:
 
 | Argument  | Unit | Type | Default | Description |
 | --------  | :---: | :------: | :-----------: | ----------- |
